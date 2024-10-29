@@ -1,0 +1,41 @@
+function [data, info] = setIORequest
+%SetIO gives an empty data for tm_msgs/SetIORequest
+% Copyright 2019-2020 The MathWorks, Inc.
+%#codegen
+data = struct();
+data.MessageType = 'tm_msgs/SetIORequest';
+[data.MODULECONTROLBOX, info.MODULECONTROLBOX] = ros.internal.ros.messages.ros.default_type('int8',1, 0);
+[data.MODULEENDEFFECTOR, info.MODULEENDEFFECTOR] = ros.internal.ros.messages.ros.default_type('int8',1, 1);
+[data.TYPEDIGITALIN, info.TYPEDIGITALIN] = ros.internal.ros.messages.ros.default_type('int8',1, 0);
+[data.TYPEDIGITALOUT, info.TYPEDIGITALOUT] = ros.internal.ros.messages.ros.default_type('int8',1, 1);
+[data.TYPEINSTANTDO, info.TYPEINSTANTDO] = ros.internal.ros.messages.ros.default_type('int8',1, 2);
+[data.TYPEANALOGIN, info.TYPEANALOGIN] = ros.internal.ros.messages.ros.default_type('int8',1, 3);
+[data.TYPEANALOGOUT, info.TYPEANALOGOUT] = ros.internal.ros.messages.ros.default_type('int8',1, 4);
+[data.TYPEINSTANTAO, info.TYPEINSTANTAO] = ros.internal.ros.messages.ros.default_type('int8',1, 5);
+[data.STATEOFF, info.STATEOFF] = ros.internal.ros.messages.ros.default_type('int8',1, 0);
+[data.STATEON, info.STATEON] = ros.internal.ros.messages.ros.default_type('int8',1, 1);
+[data.Module, info.Module] = ros.internal.ros.messages.ros.default_type('int8',1);
+[data.Type, info.Type] = ros.internal.ros.messages.ros.default_type('int8',1);
+[data.Pin, info.Pin] = ros.internal.ros.messages.ros.default_type('int8',1);
+[data.State, info.State] = ros.internal.ros.messages.ros.default_type('single',1);
+info.MessageType = 'tm_msgs/SetIORequest';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,14);
+info.MatPath{1} = 'MODULE_CONTROLBOX';
+info.MatPath{2} = 'MODULE_ENDEFFECTOR';
+info.MatPath{3} = 'TYPE_DIGITAL_IN';
+info.MatPath{4} = 'TYPE_DIGITAL_OUT';
+info.MatPath{5} = 'TYPE_INSTANT_DO';
+info.MatPath{6} = 'TYPE_ANALOG_IN';
+info.MatPath{7} = 'TYPE_ANALOG_OUT';
+info.MatPath{8} = 'TYPE_INSTANT_AO';
+info.MatPath{9} = 'STATE_OFF';
+info.MatPath{10} = 'STATE_ON';
+info.MatPath{11} = 'module';
+info.MatPath{12} = 'type';
+info.MatPath{13} = 'pin';
+info.MatPath{14} = 'state';
